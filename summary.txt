@@ -1,0 +1,1 @@
+{'allngrams': 29074, 'allwords': 98184, 'grams': {'am': 7555, 'ge': 7677, 'gu': 7188, 'ti': 6654}, 'freq': 587, 'mostfrequent': {'am': 436, 'ge': 428, 'gu': 556, 'ti': 587}, 'min': 1, 'max': 12, 'minterm': 'ኦ', 'maxterm': 'እንተዘይተጠራጢርኩም', 'minfreq': 23, 'maxfreq': 1, 'wordcount': {'am': 22445, 'ge': 24202, 'gu': 25527, 'ti': 26010}, 'uniques': 6654}

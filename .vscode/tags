@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+filereader	../indexin.py	/^def filereader(filename):$/;"	kind:function	line:182
+filereader	../resource/indexin.py	/^def filereader(filename):$/;"	kind:function	line:182
+filereader	../resource/searchin.py	/^def filereader(filename):$/;"	kind:function	line:399
+filereader	../searchin.py	/^def filereader(filename):$/;"	kind:function	line:399
+indexin.py	../indexin.py	1;"	kind:file	line:1
+indexin.py	../resource/indexin.py	1;"	kind:file	line:1
+indexing	../indexin.py	/^def indexing():$/;"	kind:function	line:11
+indexing	../resource/indexin.py	/^def indexing():$/;"	kind:function	line:11
+main	../indexin.py	/^def main():$/;"	kind:function	line:204
+main	../resource/indexin.py	/^def main():$/;"	kind:function	line:204
+main	../resource/searchin.py	/^def main():$/;"	kind:function	line:418
+main	../resource/test.py	/^def main():$/;"	kind:function	line:14
+main	../searchin.py	/^def main():$/;"	kind:function	line:418
+main	../test.py	/^def main():$/;"	kind:function	line:3
+main	../wlg.py	/^def main():$/;"	kind:function	line:79
+menu	../resource/searchin.py	/^def menu():$/;"	kind:function	line:241
+menu	../searchin.py	/^def menu():$/;"	kind:function	line:241
+remove_special_characters	../indexin.py	/^def remove_special_characters(term):     $/;"	kind:function	line:177
+remove_special_characters	../resource/indexin.py	/^def remove_special_characters(term):     $/;"	kind:function	line:177
+remove_special_characters	../resource/searchin.py	/^def remove_special_characters(term): 	    $/;"	kind:function	line:370
+remove_special_characters	../searchin.py	/^def remove_special_characters(term): 	    $/;"	kind:function	line:370
+searchin.py	../resource/searchin.py	1;"	kind:file	line:1
+searchin.py	../searchin.py	1;"	kind:file	line:1
+searching	../resource/searchin.py	/^def searching(vocabulary, posting, corpus, queryinput):$/;"	kind:function	line:16
+searching	../searchin.py	/^def searching(vocabulary, posting, corpus, queryinput):$/;"	kind:function	line:16
+stemmer	../indexin.py	/^def stemmer(prefix, suffix, term):$/;"	kind:function	line:159
+stemmer	../resource/indexin.py	/^def stemmer(prefix, suffix, term):$/;"	kind:function	line:159
+stemmer	../resource/searchin.py	/^def stemmer(prefix, suffix, term):$/;"	kind:function	line:375
+stemmer	../searchin.py	/^def stemmer(prefix, suffix, term):$/;"	kind:function	line:375
+test.py	../resource/test.py	1;"	kind:file	line:1
+test.py	../test.py	1;"	kind:file	line:1
+to_unicode	../indexin.py	/^def to_unicode(obj, encoding='utf-8'):$/;"	kind:function	line:153
+to_unicode	../resource/indexin.py	/^def to_unicode(obj, encoding='utf-8'):$/;"	kind:function	line:153
+to_unicode	../resource/searchin.py	/^def to_unicode(obj, encoding='utf-8'):$/;"	kind:function	line:393
+to_unicode	../searchin.py	/^def to_unicode(obj, encoding='utf-8'):$/;"	kind:function	line:393
+to_unicode	../wlg.py	/^def to_unicode(obj, encoding='utf8'):$/;"	kind:function	line:72
+wlg.py	../wlg.py	1;"	kind:file	line:1
+wordlist	../wlg.py	/^def wordlist():$/;"	kind:function	line:12

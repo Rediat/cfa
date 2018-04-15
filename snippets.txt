@@ -1,0 +1,8 @@
+#Generate list of words that endswith a specific pattern
+def main():
+	for line in open('corpus/amh.txts'):
+		for word in line.split():
+			if word.endswith('ን'):
+				print (word)
+
+if __name__ == '__main__':main()
