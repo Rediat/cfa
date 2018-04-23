@@ -14,14 +14,14 @@ import langid as l
 def wordlist():
 	#****************** START Model generator ********************************
 	print ("\n Loading corpus files to memory and generating models ... ")
-	path = 'corpus'
+	path = 'corpus/clearedcommons/300'
 	mostfrequent = {} #the most frequent ngram in the corpus
 	wordcount = {}
 	grams = {}
 	
 	started = datetime.datetime.now()
 	model =[]
-	print ("{}\t{}\t\t{}\t{}\t{}\t\t{}\t\t{}\t{}\t\t{}".format('seq','term','freq','gram','lang','prob','InFreq','OvFreq','percent'))
+	# print ("{}\t{}\t\t{}\t{}\t{}\t\t{}\t\t{}\t{}\t\t{}".format('seq','term','freq','gram','lang','prob','InFreq','OvFreq','percent'))
 
 	for infile in glob.glob(os.path.join(path, '*.txt')): #opens files from director
 		try:
@@ -79,7 +79,7 @@ def savetofile(summary, started):
 		#temp = [i[0], i[1],i[2],i[3],i[4],i[2]/summary['wordcount'][i[4]],i[2]/summary['mostfrequent'][i[4]], i[2]/summary['mostfrequent'][maximum], mysum[i[4]]/summary['wordcount'][i[4]]]
 		temp = [i[0], i[1],i[2],i[3],i[4],i[2]/summary['wordcount'][i[4]],i[2]/summary['grams'][i[4]]/summary['mostfrequent'][maximum], i[2]/summary['allngrams']/summary['mostfrequent'][maximum], mysum[i[4]]/summary['wordcount'][i[4]]]		
 		wfile.write(str(temp[0])+","+str(temp[1])+","+str(temp[2])+","+str(temp[3])+","+str(temp[4])+","+str(temp[5])+","+str(temp[6])+","+str(temp[7])+str('\r\n'))
-		print ("{}\t{}\t\t{}\t{}\t{}\t\t{:10.4f}\t{:10.4f}\t{:10.4f}\t{:10.4f}".format(temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8]))
+		# print ("{}\t{}\t\t{}\t{}\t{}\t\t{:10.4f}\t{:10.4f}\t{:10.4f}\t{:10.4f}".format(temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8]))
 	wfile.close()
 	rsummary = summary
 	rsummary.pop('model')
@@ -100,7 +100,7 @@ def timer(spent):
 	return running-spent
 
 def summerize(model,transit,mostfrequent,wordcount,grams):
-    	
+	
 	max,min,freq=0,100,0 ; minterm,maxterm='',''
 	counter = 0 ; uniques = len(transit[1])
 	lang =transit[0]

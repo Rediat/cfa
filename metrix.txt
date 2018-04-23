@@ -1,1 +1,1 @@
-{'allngrams': 2515, 'allwords': 3640, 'grams': {'am': 153, 'ge': 231, 'gu': 1968, 'ti': 163}, 'freq': 3, 'mostfrequent': {'am': 2, 'ge': 3, 'gu': 51, 'ti': 3}, 'min': 2, 'max': 5, 'minterm': 'ዲ ', 'maxterm': 'ርሃም ና', 'minfreq': 3, 'maxfreq': 1, 'wordcount': {'am': 154, 'ge': 254, 'gu': 3058, 'ti': 174}, 'uniques': 163}
+{'allngrams': 27244, 'allwords': 83223, 'vocabulary': {'am': 6974, 'ge': 7221, 'gu': 6888, 'ti': 6161}, 'mostfrequent': {'am': 436, 'ge': 428, 'gu': 338, 'ti': 587}, 'wordcount': {'am': 18980, 'ge': 20778, 'gu': 22339, 'ti': 21126}, 'uniques': 6161}

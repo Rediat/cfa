@@ -9,11 +9,11 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "${config:python.pythonPath}",
+            "pythonPath": "/home/rediat/anaconda3/bin/python",
             "program": "${file}",
             "cwd": "${workspaceFolder}",
-            // "env": {},
-            // "envFile": "${workspaceFolder}/.env",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
             "debugOptions": [
                 "RedirectOutput"
             ]
@@ -22,10 +22,10 @@
             "name": "Python: Attach",
             "type": "python",
             "request": "launch",
-            // "localRoot": "${workspaceFolder}",
-            // "remoteRoot": "${workspaceFolder}",
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "${workspaceFolder}",
             "port": 3000,
-            // "secret": "my_secret",
+            "secret": "my_secret",
             "host": "localhost"
         },
         {

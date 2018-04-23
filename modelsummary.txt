@@ -1,0 +1,33 @@
+2018-04-09 07:55:36.703911 - Loading corpus files to memory and generating models ...2018-04-09 07:55:36.940341 - Completed removing punctuation marks and numbers for Amharic language
+2018-04-09 07:55:36.942094 - Started building sorted frequency distribution for Amharic language2018-04-09 07:55:36.991996 - Matching 56,695 vocabulary items to 153,690 ngrams in Amharic language1100.00%2018-04-09 09:57:32.147713 - Started building a summary of the model for Amharic language2018-04-09 09:57:32.471519 - Completed building sorted frequency distribution for Amharic language--------------------------------------------------------------------------------------------------------------2018-04-09 09:57:32.895616 - Completed removing punctuation marks and numbers for Geez language
+2018-04-09 09:57:32.906078 - Started building sorted frequency distribution for Geez language
+2018-04-09 09:57:33.002116 - Matching 52,613 vocabulary items to 154,230 ngrams in Geez language
+1100.00%
+2018-04-09 11:29:24.099853 - Started building a summary of the model for Geez language
+2018-04-09 11:29:24.253541 - Completed building sorted frequency distribution for Geez language
+--------------------------------------------------------------------------------------------------------------
+2018-04-09 11:29:24.482895 - Completed removing punctuation marks and numbers for Guragigna language
+2018-04-09 11:29:24.483049 - Started building sorted frequency distribution for Guragigna language
+2018-04-09 11:29:24.510255 - Matching 55,511 vocabulary items to 152,470 ngrams in Guragigna language
+100.00%
+2018-04-09 12:30:59.471628 - Started building a summary of the model for Guragigna language
+2018-04-09 12:30:59.556547 - Completed building sorted frequency distribution for Guragigna language
+--------------------------------------------------------------------------------------------------------------
+2018-04-09 12:30:59.750170 - Completed removing punctuation marks and numbers for Tigrigna language
+2018-04-09 12:30:59.750325 - Started building sorted frequency distribution for Tigrigna language
+2018-04-09 12:30:59.776082 - Matching 57,484 vocabulary items to 157,890 ngrams in Tigrigna language
+100.00%
+2018-04-09 13:33:42.914158 - Started building a summary of the model for Tigrigna language
+2018-04-09 13:33:43.003095 - Completed building sorted frequency distribution for Tigrigna language
+--------------------------------------------------------------------------------------------------------------
+2018-04-09 13:33:43.003228 - Saving the model for all languages to model.txt
+100.00%
+
+All Ngrams: {'am': 153690, 'ge': 154230, 'gu': 152470, 'ti': 157890}            All Ngrams: 618280
+Vocabularies: {'am': 56695, 'ge': 52613, 'gu': 55511, 'ti': 57484}              All Vocabulary: 222303
+
+A total of 222303 Vocabularies are generated for all languages in model.txt file
+
+Started: 2018-04-09 07:55:36.704140
+End    : 2018-04-09 13:33:49.075352
+Elapsed: 5:38:12.371212
