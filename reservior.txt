@@ -1,0 +1,29 @@
+{
+'CFA': {
+'cc': {
+    'bl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'by': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'fl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'in': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'il': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}}, 
+'cr': {'bl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'by':{'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'fl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'in': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'il': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}}}, '
+NBC': {
+'cc': {
+    'bl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'by': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'fl': {'accuracy':[], 'precision': [], 'recall': [], 'fscore': []}, 
+    'in': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'il': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}}, 
+'cr': {
+    'bl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'by': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'fl': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'in': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}, 
+    'il': {'accuracy': [], 'precision': [], 'recall': [], 'fscore': []}}}}
+
+
+['CFA', 'cc', 'bl', '1', '2030', '0.7857142857142857', '0.7858247114445709', '0.7869891398806848', '0.7864064946219227']

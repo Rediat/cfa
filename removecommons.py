@@ -12,8 +12,12 @@ import langid as l
 def clearCommons():
 	#****************** START Model generator ********************************
 	os.system('clear')
-	print ("\n Loading corpus files to memory and generating models ... ")
-	path = 'corpus/300'
+	print ('\n\n{}'.format('='*100))
+	print ('AUTHOMATIC LANGUAGE IDENTIFIER USING CUMMULATIVE FREQUENCY ADDITION - COMMONS REMOVER'.center(100,' '))
+	print ('-'*100)	
+
+	print ("\nLoading corpus files to memory ... ")
+	path = 'corpus/cr/300'
 	
 	alllist =[] ; vocabulary = set()
 	started = datetime.datetime.now()
@@ -36,9 +40,9 @@ def clearCommons():
 			print ('-'*100) 
 			print ('\nOpening relevant files ...  \t\t\t\t\t\t{}'.format(l.timer(started)))
 
-			content[lang]=set(l.regex(rawtext)[1].split())
+			content[lang]=set(l.regex(rawtext)[1].split()) #source file content set, i.e. vocabulary
 			
-			listed = l.regex(rawtext)[1].split()
+			listed = l.regex(rawtext)[1].split() ##source file content total words list
 			alllist.append(listed)
 
 			for i in content: #update the set vocabulary with the union of itself and a new list.
@@ -57,12 +61,12 @@ def clearCommons():
 	print ('-'*100)
 	print('{} - Matching {:,} vocabulary items to {:,} ngrams in all language'.format(datetime.datetime.now(),r,w))
 	
-	for i in content:	
+	for i in content:	#checking and adding only the common occuraces in each set
 		for j in content:
 			if i==j:continue
 			commons.update(content[i].intersection(content[j]))
 
-	path1 = 'corpus/clearedcommons/300'
+	path1 = 'corpus/cc/300'
 	for infile in glob.glob(os.path.join(path, '*.txt')):
 		filename = infile.split('/')[-1] ; lang = filename[:2]
 		if os.path.isfile(os.path.join(path1, filename)): os.remove(os.path.join(path1, filename))
@@ -76,7 +80,7 @@ def clearCommons():
 		c.write(str(cleared))
 		c.close()
 
-	print ('\nA total of {} common terms in commons.txt file are removed for the corpus '.format(len(commons)))
+	print ('\nA total of {} common terms in listed in commons.txt are removed from the corpus '.format(len(commons)))
 
 	if os.path.isfile('commons.txt'): os.remove('commons.txt')
 	s=open('commons.txt','a+')
@@ -91,7 +95,6 @@ def clearCommons():
 
 def main():
 	clearCommons()
-	#print (sys.stdout.encoding)
 	
 if __name__ == '__main__':
 	main()

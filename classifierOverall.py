@@ -1,57 +1,40 @@
 import os
-import sys
-import re
-import glob
-import string
-import datetime
-import copy
-import decimal
-import langid as l
+import sys ; import re ; import glob ; import string ; import datetime ; import copy ; import decimal ; import langid as l
 
 #Todo
 	#Remove repetition of grams befor running the classifier[with and with out repetition in test]
 	#Consider multilingual testing samples
 	#modularize classifier.py in to functions - move functions in to another file
 
-def classification(phraselength,percent=1,lowfreq=0):
-
+def classification(ct,readsampled,vocabulary,frequencyDict,uniquengrams,totalngrams,phraselength=25,wordbased=0,location=0,infinity=0,maxg=5,lines=0):
 	#*************************** START Reading Files ************************************
 	started = datetime.datetime.now()
-	maxngram = 5
-	f=open('model.txt','r') #, encoding = 'utf8' )
-	#m=open('metrix.txt','r', encoding = 'utf8' )
-	s=open('sample.txt','r') #, encoding = 'utf8' )
+	
+	testing = readsampled[0]
+	averagebyte = int(readsampled[1])
+	averagecharacters = int(readsampled[2])
+	phrases = int(readsampled[3])
 
 	print ('-'*100) 
-	print ('\nOpening relevant files ...  \t\t\t\t\t\t{}'.format(l.timer(started)))
+	# print ('\nFiles {} loaded to memory ...  \t\t\t\t\t\t{}'.format(path+filename,l.timer(started)))
 	mytime = datetime.datetime.now()
 	
-	model = f.readlines()
-	#matrix = m.read()
 	print ('Reading language models ...  \t\t\t\t\t\t{}'.format(l.timer(mytime)))
 	mytime = datetime.datetime.now()
-	
-	sample = s.readlines()
-	f.close()
-	s.close()
-	#m.close()
+
 	#*************************** END Reading Files ***************************************
 	print ('Reading test strings ...  \t\t\t\t\t\t{}'.format(l.timer(mytime)))
 	mytime = datetime.datetime.now()
 
-	sampled= l.readsample(sample,phraselength)
-
 	grams=[]
-	for i in range(2,maxngram+1):
+	for i in range(2,maxg+1):
 		grams.append(i)
 
 	totals = {}
 
 	lang = dict(am={},ge={},gu={},ti={})
 	mylang = dict(am=0,ge=0,gu=0,ti=0)
-	totalngrams = copy.deepcopy(mylang)
-	frequencyDict = copy.deepcopy(lang)
-	uniquengrams = copy.deepcopy(mylang)
+	maxofg = len(lang)
 
 	base=dict(CFA={},NBC={})
 	overallrecall = copy.deepcopy(base)
@@ -82,50 +65,18 @@ def classification(phraselength,percent=1,lowfreq=0):
 			totals[j]=0
 		overallconfusion['CFA'][i]=copy.deepcopy(mylang)
 		overallconfusion['NBC'][i]=copy.deepcopy(mylang)
-	
-	overallwrongs = copy.deepcopy(overallconfusion)
 
-	testing=[] #[['am', [['እው', 2], ['ውነ', 2], ['ነት', 2], ['እውነ', 3], ['ውነት', 3], ['እውነት', 4]]]
-	for i in sampled:		
-		testing.append(l.ngram(l.regex(i),1))	
-	
-	norepeat = set()
-	frequencyTable=[] #[1,ት ,2,2,am,78,0.012987012987012988,0.0002563116749967961,1.559271820060032e-05,0.012987012987012988]
-	
-	for temp in model: #[am,ት ,2,2,78,1.0043572984749456,1.0009775171065494,0.012987012987012988]
-		temps = temp.rstrip('\n').split(',')
-		if float(percent)<1:
-			if float(temps[7])<=float(percent):
-				frequencyTable.append(temps)
-				frequencyDict[temps[0]][temps[1]]=copy.deepcopy(dict(freq=temps[3],ovFreq=temps[6]))
-				totalngrams[temps[0]]+=int(temps[3])
-				if temps[1] not in norepeat:
-					uniquengrams[temps[0]]+=1
-					norepeat.add(temps[1])
-		
-		elif int(lowfreq)!=0: 
-			if int(temps[3])>lowfreq:
-				frequencyTable.append(temps)
-				frequencyDict[temps[0]][temps[1]]=copy.deepcopy(dict(freq=temps[3],ovFreq=temps[6]))
-				totalngrams[temps[0]]+=int(temps[3])
-				if temps[1] not in norepeat:
-					uniquengrams[temps[0]]+=1					
-					norepeat.add(temps[1])
-		else:
-			frequencyTable.append(temps)
-			totalngrams[temps[0]]+=int(temps[3])
-			frequencyDict[temps[0]][temps[1]]=copy.deepcopy(dict(freq=temps[3],ovFreq=temps[6]))
-			if temps[1] not in norepeat:
-				uniquengrams[temps[0]]+=1
-				norepeat.add(temps[1])
+	overallwrongs = copy.deepcopy(overallconfusion)
 
 	print ('Creating language dictionaries ...  \t\t\t\t\t{}'.format(l.timer(mytime)))
 	mytime = datetime.datetime.now()
 
-	l.overallmyclassifier(testing,frequencyDict,overallwrongs,overalltotal,overallrecall,uniquengrams,totalngrams)
-
+	l.overallmyclassifier(testing,frequencyDict,overallwrongs,overalltotal,overallrecall,uniquengrams,totalngrams,phrases,vocabulary)
+	
 	print ('Performing classifications ...  \t\t\t\t\t{}'.format(l.timer(mytime)))
 	mytime = datetime.datetime.now()
+
+	# print (overallwrongs);return
 
 	for i in overallconfusion['CFA']:
 		for j in overallconfusion['CFA'][i]:
@@ -136,6 +87,8 @@ def classification(phraselength,percent=1,lowfreq=0):
 				overallconfusion['CFA'][i][j]=overallwrongs['CFA'][i][j]
 				overallconfusion['NBC'][i][j]=overallwrongs['NBC'][i][j]
 
+	print ('overallconfusion {}'.format(overallconfusion))
+	
 	for i in lang:
 		numerator=0 ; denominator=0
 		n = 0 ; d = 0
@@ -147,8 +100,8 @@ def classification(phraselength,percent=1,lowfreq=0):
 		overallprecision['CFA']+=(numerator/denominator) if denominator!=0 else 0
 		overallprecision['NBC']+=(n/d) if d!=0 else 0
 	
-	overallprecision['CFA']/=4
-	overallprecision['NBC']/=4
+	overallprecision['CFA']/=maxofg
+	overallprecision['NBC']/=maxofg
 
 	for x in overallconfusion['CFA']:
 		numerator=0 ; denominator=0
@@ -167,16 +120,18 @@ def classification(phraselength,percent=1,lowfreq=0):
 	overallaccuracy['NBC']/=overalltotal['NBC']
 	
 	for i in base:
-		overallfscore[i] = 2*((overallprecision[i]*(sum(overallrecall[i].values())/4))/(overallprecision[i]+(sum(overallrecall[i].values())/4))) if (overallprecision[i]!=0.00 or sum(overallrecall[i].values()))!=0.00 else 0
+		overallfscore[i] = 2*((overallprecision[i]*(sum(overallrecall[i].values())/maxofg))/(overallprecision[i]+(sum(overallrecall[i].values())/maxofg))) if (overallprecision[i]!=0.00 or sum(overallrecall[i].values()))!=0.00 else 0
 	
 	print ('Generating performance metrices - precision, recall and f-score ...  \t{}'.format(l.timer(mytime)))
 	mytime = datetime.datetime.now()
 
-	print ('\n'); print ('-'*100)
+	
+	print ('\nAverage length of test strings: {:,} word(s) / {:,} character(s) / {:,} bytes\tModel: {:,} lines.'.format(phraselength,averagecharacters,averagebyte,lines))
+	print ('='*100)
 	print ('{:<16}|{:<15}|{:<15}|{:<15}|{:<15}|{:<15}'.format('Ngrams','Observations','Accuracy','Precision','Recall','F-score'))
 	print ('-'*100)
 	for i in base:
-		print ('{:<3} {:<10}\t|{:,}\t\t|{:10.4f}\t|{:10.4f}\t|{:10.4f}\t|{:10.4f}'.format(i,'(2,3,4,5)',overalltotal[i],overallaccuracy[i],overallprecision[i],(sum(overallrecall[i].values())/4),overallfscore[i]))
+		print ('{:<3} {:<10}\t|{:,}\t\t|{:10.4f}\t|{:10.4f}\t|{:10.4f}\t|{:10.4f}'.format(i,'(2,3,4,5)',overalltotal[i],overallaccuracy[i],overallprecision[i],(sum(overallrecall[i].values())/maxofg),overallfscore[i]))
 
 	print ('-'*100)
 	print ('\nGenerating clasification performance results ...  \t\t\t{}'.format(l.timer(mytime)))
@@ -187,32 +142,83 @@ def classification(phraselength,percent=1,lowfreq=0):
 
 def main():
 	os.system('clear') # on linux 
-	choice=1; phraselength=0;percent=0;lowfreq=0
-	while choice!=0:
+	selection=1; phraselength=0 ; modeltype = {1:'bl', 2:'by', 3:'fl', 4:'in', 5:'il'} 
+	while selection!=0:
+		choice=1
 		print ('\n')
 		print ('='*100)
 		print ('AUTHOMATIC LANGUAGE IDENTIFIER USING CUMMULATIVE FREQUENCY ADDITION'.center(100,' '))
 		print ('-'*100)  
-		try:			
-			choice = int(input('\nPress 1 to classify [0 to exit] :   '))
+		
+		started = datetime.datetime.now()
+		location=0; wordbased=0
 
-			if choice==0:
-				return
-			else:
-				percent = float(input('\n1. Enter a percentage as 0.xx to select the top x frequent items of the model :   '))
-				phraselength = int(input('2. Insert between 1 and 25 to set the test phrase length from testing files   :   '))
-				if float(percent)==1:
-					lowfreq = int(input('3. Enter 1 to n not to consider lowest counts in the model [0 to consider all]:   '))
-				else:
-					lowfreq=0
+		lang = dict(am={},ge={},gu={},ti={})
+		mylang = dict(am=0,ge=0,gu=0,ti=0)
+		totalngrams = copy.deepcopy(mylang)
+		frequencyDict = copy.deepcopy(lang)
+		uniquengrams = copy.deepcopy(mylang)
 
-				if phraselength>25 or phraselength<1 or percent<=0 or percent>1:
-					print ('\n\nPlease check your entry on percent, ngram value, and/or phrase length')
-				else:
-					classification(phraselength,percent,lowfreq)
-		except ValueError:
+		ct = int(input('\nSelect Test number  - 1 to 10 :   '))
+		modelselector = int(input('\nSelect Model type number below: \n\n   1. The Model is based on Fixed Length N-grams without location features - Baseline [BL]. \n   2. The Model is based on source text - Byteorder N-grams [BY]. \n   3. The Model is based on Fixed Length N-grams with location features [FL]. \n   4. The Model is based on Infiniti-grams without location features [IN]. \n   5. The Model is based on Infiniti-grams with location features [IL]. \n   6. Exit.:   '))
+		
+		if modelselector==6: choice=0;break		
+
+		if location<0 or modelselector<=0 or modelselector>6 or ct<=0 or ct>10:
 			print ('\n\nPlease check your entry on percent, ngram value, and/or phrase length')
-			continue
+			pause=input(''); print('{}'.format(pause)) ; continue
+		else:
+			if modeltype[modelselector]=='bl':
+				wordbased=1 ; location=0 ; infinity=0 ; mod='bl'
+			elif modeltype[modelselector]=='fl': 
+				wordbased=1 ; location=1 ; infinity=0 ; mod='fl'
+			elif modeltype[modelselector]=='in': 
+				wordbased=1 ; location=0 ; infinity=1 ; mod='in'
+			elif modeltype[modelselector]=='il': 
+				wordbased=1 ; location=1 ; infinity=1 ; mod='il'
+			else: 
+				wordbased=0 ; location=0 ; mod=modeltype[modelselector]
+			
+			path='models/'+str(ct)
+			filename = mod+'.txt'
+			print ('-'*100) 
+			print ('\nFiles {}/{} located and opened ...  \t\t\t{}'.format(path,filename,l.timer(started)))
+
+			params=l.readmodel(path,mod,frequencyDict,totalngrams,uniquengrams)
+			frequencyDict = params[0]; uniquengrams = params[1] ; lines=params[5]
+			totalngrams = params[2]; maxg=params[3];vocabulary=params[4]
+
+		modelselected = {	1:' The Model is based on Fixed Length N-grams without location features - Baseline [bl] on test {}. ',
+						2:' The Model is based on source text - Byteorder Ngrams [by] on test {}. ', 
+						3:' The Model is based on Fixed Length N-grams with location features [fl] on test {}. ', 
+						4:' The Model is based on Infiniti-grams without location features [in] on test {}. ',
+						5:' The Model is based on Infiniti-grams with location features. [il] on test {}. '
+					}
+		os.system('clear')
+		selection=1 # on linux 
+		while choice!=0:
+			phraselength=0 ; infinity=0
+			print ('\n\n{}'.format('='*100))
+			print ('AUTHOMATIC LANGUAGE IDENTIFIER USING CUMMULATIVE FREQUENCY ADDITION - CLASSIFIER'.center(100,' '))
+			print ('-'*100)
+			print (modelselected[modelselector].format(ct).center(100,'*'))
+			
+			try:
+				choice = int(input('\nPress 1 to classify 2 to change model [0 to exit] :   '))
+				if choice==0: selection=0 ; break
+				elif choice==2: choice=0; break
+				else:
+					phraselength = int(input('\nInsert between 1 and 25 to set the test phrase length from testing files   :   '))
+					if phraselength>25 or phraselength<1:
+						print ('\n\nPlease check your entry on percent, ngram value, and/or phrase length')
+					else:
+						path2='samples/'
+						s=open(os.path.join(path2,str(ct)+'.txt'),'r') ; sample = s.readlines() ; s.close()
+						readsampled = l.readsample(sample,phraselength,wordbased,location,infinity)
+						classification(ct,readsampled,vocabulary,frequencyDict,uniquengrams,totalngrams,phraselength,wordbased,location,infinity,maxg,lines)
+			except ValueError:
+				print ('\n\nPlease check your entry on percent, ngram value, and/or phrase length')
+				continue
 
 if __name__ == '__main__':
 	main()

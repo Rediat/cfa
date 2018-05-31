@@ -1,0 +1,535 @@
+
+
+==============================================================================================================
+                AUTHOMATIC LANGUAGE IDENTIFIER USING CUMMULATIVE FREQUENCY ADDITION - MODELLER
+--------------------------------------------------------------------------------------------------------------
+
+Press 1 to generate models [0 to exit] :   1
+
+Select Model type number below:
+
+   1. The Model is based on Word Frequency without location features [wr]
+   2. The Model is based on Fixed Length N-grams without location features - Baseline [bl].
+   3. The Model is based on source text - Byteorder N-grams [by].
+   4. The Model is based on Fixed Length N-grams with location features [fl].
+   5. The Model is based on Infiniti-grams without location features [in].
+   6. The Model is based on Infiniti-grams with location features [il].
+   7. Exit.:   4
+
+==============================================================================================================
+
+2018-05-18 10:03:15.582334 - Loading corpus files to memory and generating models ...
+
+==============================================================================================================
+Processing corpus 1
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:15.958574 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:03:15.958675 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:03:16.015622 - Matching 38,791 vocabulary items to 196,504 ngrams in Amharic language
+        2018-05-18 10:03:21.092636 - 100.00%
+        2018-05-18 10:03:21.097125 - Started building a summary of the model for Amharic language
+        2018-05-18 10:03:21.241577 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:21.621452 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:03:21.621582 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:03:21.674684 - Matching 36,479 vocabulary items to 205,314 ngrams in Geez language
+        2018-05-18 10:03:27.015620 - 100.00%
+        2018-05-18 10:03:27.019995 - Started building a summary of the model for Geez language
+        2018-05-18 10:03:27.204271 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:27.623292 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:03:27.623423 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:03:27.678858 - Matching 35,861 vocabulary items to 199,118 ngrams in Guragigna language
+        2018-05-18 10:03:33.954596 - 100.00%
+        2018-05-18 10:03:33.959767 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:03:34.202691 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:34.653933 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:03:34.654149 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:03:34.720552 - Matching 37,545 vocabulary items to 208,000 ngrams in Tigrigna language
+        2018-05-18 10:03:41.416220 - 100.00%
+        2018-05-18 10:03:41.421406 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:03:41.726088 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:03:41.726286 - Saving the model for all languages to models/1/fl.txt
+        2018-05-18 10:03:50.173473 - 100.00%
+
+Ngram Vocabularies : {'am': 38791, 'ge': 36479, 'gu': 35861, 'ti': 37545}               All Vocabulary: 148,676
+Fixed length Ngrams: {'am': 196504, 'ge': 205314, 'gu': 199118, 'ti': 208000}           All Ngrams: 808,936
+
+A total of 148,676 Vocabularies are generated for all languages in models/1/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3317, 'ge': 3516, 'gu': 3212, 'ti': 3597}
+3        {'am': 8053, 'ge': 7601, 'gu': 7464, 'ti': 7986}
+4        {'am': 11910, 'ge': 11033, 'gu': 10938, 'ti': 11379}
+5        {'am': 15511, 'ge': 14329, 'gu': 14247, 'ti': 14583}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39177, 'gu': 37343, 'ti': 38995}
+3        {'am': 45325, 'ge': 47278, 'gu': 45634, 'ti': 47665}
+4        {'am': 52927, 'ge': 55379, 'gu': 53925, 'ti': 56335}
+5        {'am': 60529, 'ge': 63480, 'gu': 62216, 'ti': 65005}
+
+==============================================================================================================
+Processing corpus 2
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:50.619181 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:03:50.619684 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:03:50.677732 - Matching 39,482 vocabulary items to 196,654 ngrams in Amharic language
+        2018-05-18 10:03:56.710753 - 100.00%
+        2018-05-18 10:03:56.715255 - Started building a summary of the model for Amharic language
+        2018-05-18 10:03:56.871109 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:03:57.256212 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:03:57.256728 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:03:57.309806 - Matching 35,819 vocabulary items to 205,210 ngrams in Geez language
+        2018-05-18 10:04:03.425885 - 100.00%
+        2018-05-18 10:04:03.430261 - Started building a summary of the model for Geez language
+        2018-05-18 10:04:03.633078 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:04.022642 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:04:04.022768 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:04:04.075511 - Matching 36,451 vocabulary items to 199,236 ngrams in Guragigna language
+        2018-05-18 10:04:10.307263 - 100.00%
+        2018-05-18 10:04:10.311664 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:04:10.542826 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:10.954260 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:04:10.954388 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:04:11.011453 - Matching 38,069 vocabulary items to 208,248 ngrams in Tigrigna language
+        2018-05-18 10:04:17.014402 - 100.00%
+        2018-05-18 10:04:17.018901 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:04:17.298196 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:04:17.298394 - Saving the model for all languages to models/2/fl.txt
+        2018-05-18 10:04:26.798756 - 100.00%
+
+Ngram Vocabularies : {'am': 39482, 'ge': 35819, 'gu': 36451, 'ti': 38069}               All Vocabulary: 149,821
+Fixed length Ngrams: {'am': 196654, 'ge': 205210, 'gu': 199236, 'ti': 208248}           All Ngrams: 809,348
+
+A total of 149,821 Vocabularies are generated for all languages in models/2/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3373, 'ge': 3454, 'gu': 3283, 'ti': 3660}
+3        {'am': 8210, 'ge': 7453, 'gu': 7566, 'ti': 8090}
+4        {'am': 12121, 'ge': 10833, 'gu': 11110, 'ti': 11532}
+5        {'am': 15778, 'ge': 14079, 'gu': 14492, 'ti': 14787}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39178, 'gu': 37344, 'ti': 38994}
+3        {'am': 45350, 'ge': 47261, 'gu': 45654, 'ti': 47706}
+4        {'am': 52977, 'ge': 55344, 'gu': 53964, 'ti': 56418}
+5        {'am': 60604, 'ge': 63427, 'gu': 62274, 'ti': 65130}
+
+==============================================================================================================
+Processing corpus 3
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:27.294063 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:04:27.294910 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:04:27.358340 - Matching 38,788 vocabulary items to 196,768 ngrams in Amharic language
+        2018-05-18 10:04:33.805376 - 100.00%
+        2018-05-18 10:04:33.810873 - Started building a summary of the model for Amharic language
+        2018-05-18 10:04:33.963067 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:34.455688 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:04:34.455897 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:04:34.521957 - Matching 36,745 vocabulary items to 205,068 ngrams in Geez language
+        2018-05-18 10:04:41.304325 - 100.00%
+        2018-05-18 10:04:41.308748 - Started building a summary of the model for Geez language
+        2018-05-18 10:04:41.530327 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:42.023006 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:04:42.023610 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:04:42.102085 - Matching 35,940 vocabulary items to 198,908 ngrams in Guragigna language
+        2018-05-18 10:04:49.320706 - 100.00%
+        2018-05-18 10:04:49.326042 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:04:49.624467 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:04:50.090094 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:04:50.090206 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:04:50.167287 - Matching 37,663 vocabulary items to 208,232 ngrams in Tigrigna language
+        2018-05-18 10:04:57.589739 - 100.00%
+        2018-05-18 10:04:57.594178 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:04:57.899876 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:04:57.900095 - Saving the model for all languages to models/3/fl.txt
+        2018-05-18 10:05:09.013274 - 100.00%
+
+Ngram Vocabularies : {'am': 38788, 'ge': 36745, 'gu': 35940, 'ti': 37663}               All Vocabulary: 149,136
+Fixed length Ngrams: {'am': 196768, 'ge': 205068, 'gu': 198908, 'ti': 208232}           All Ngrams: 808,976
+
+A total of 149,136 Vocabularies are generated for all languages in models/3/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3363, 'ge': 3522, 'gu': 3267, 'ti': 3638}
+3        {'am': 8084, 'ge': 7645, 'gu': 7471, 'ti': 8001}
+4        {'am': 11890, 'ge': 11123, 'gu': 10944, 'ti': 11402}
+5        {'am': 15451, 'ge': 14455, 'gu': 14258, 'ti': 14622}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39177, 'gu': 37343, 'ti': 38996}
+3        {'am': 45369, 'ge': 47237, 'gu': 45599, 'ti': 47704}
+4        {'am': 53015, 'ge': 55297, 'gu': 53855, 'ti': 56412}
+5        {'am': 60661, 'ge': 63357, 'gu': 62111, 'ti': 65120}
+
+==============================================================================================================
+Processing corpus 4
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:05:09.650844 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:05:09.650989 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:05:09.708721 - Matching 39,356 vocabulary items to 196,408 ngrams in Amharic language
+        2018-05-18 10:05:17.494926 - 100.00%
+        2018-05-18 10:05:17.502643 - Started building a summary of the model for Amharic language
+        2018-05-18 10:05:17.714048 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:05:18.342143 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:05:18.343007 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:05:18.406521 - Matching 35,125 vocabulary items to 205,312 ngrams in Geez language
+        2018-05-18 10:05:26.210654 - 100.00%
+        2018-05-18 10:05:26.214826 - Started building a summary of the model for Geez language
+        2018-05-18 10:05:26.453621 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:05:27.088033 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:05:27.088594 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:05:27.153709 - Matching 36,551 vocabulary items to 199,158 ngrams in Guragigna language
+        2018-05-18 10:05:35.113411 - 100.00%
+        2018-05-18 10:05:35.118458 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:05:35.419781 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:05:36.076989 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:05:36.077444 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:05:36.143297 - Matching 38,292 vocabulary items to 207,922 ngrams in Tigrigna language
+        2018-05-18 10:05:45.320800 - 100.00%
+        2018-05-18 10:05:45.326363 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:05:45.714220 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:05:45.714437 - Saving the model for all languages to models/4/fl.txt
+        2018-05-18 10:05:57.328073 - 100.00%
+
+Ngram Vocabularies : {'am': 39356, 'ge': 35125, 'gu': 36551, 'ti': 38292}               All Vocabulary: 149,324
+Fixed length Ngrams: {'am': 196408, 'ge': 205312, 'gu': 199158, 'ti': 207922}           All Ngrams: 808,800
+
+A total of 149,324 Vocabularies are generated for all languages in models/4/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3366, 'ge': 3345, 'gu': 3298, 'ti': 3666}
+3        {'am': 8177, 'ge': 7297, 'gu': 7606, 'ti': 8142}
+4        {'am': 12083, 'ge': 10639, 'gu': 11136, 'ti': 11606}
+5        {'am': 15730, 'ge': 13844, 'gu': 14511, 'ti': 14878}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39178, 'gu': 37344, 'ti': 38995}
+3        {'am': 45309, 'ge': 47278, 'gu': 45641, 'ti': 47652}
+4        {'am': 52895, 'ge': 55378, 'gu': 53938, 'ti': 56309}
+5        {'am': 60481, 'ge': 63478, 'gu': 62235, 'ti': 64966}
+
+==============================================================================================================
+Processing corpus 5
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:05:58.061864 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:05:58.062474 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:05:58.125311 - Matching 38,968 vocabulary items to 196,670 ngrams in Amharic language
+        2018-05-18 10:06:06.548675 - 100.00%
+        2018-05-18 10:06:06.553346 - Started building a summary of the model for Amharic language
+        2018-05-18 10:06:06.761850 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:06:07.387516 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:06:07.387978 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:06:07.468476 - Matching 35,936 vocabulary items to 205,386 ngrams in Geez language
+        2018-05-18 10:06:16.055107 - 100.00%
+        2018-05-18 10:06:16.060041 - Started building a summary of the model for Geez language
+        2018-05-18 10:06:16.338659 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:06:16.912091 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:06:16.912759 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:06:17.007978 - Matching 36,169 vocabulary items to 199,088 ngrams in Guragigna language
+        2018-05-18 10:06:25.918537 - 100.00%
+        2018-05-18 10:06:25.925686 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:06:26.308111 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:06:26.979176 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:06:26.980121 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:06:27.050759 - Matching 37,651 vocabulary items to 208,184 ngrams in Tigrigna language
+        2018-05-18 10:06:35.183109 - 100.00%
+        2018-05-18 10:06:35.378618 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:06:35.861124 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:06:35.861284 - Saving the model for all languages to models/5/fl.txt
+        2018-05-18 10:07:15.262026 - 100.00%
+
+Ngram Vocabularies : {'am': 38968, 'ge': 35936, 'gu': 36169, 'ti': 37651}               All Vocabulary: 148,724
+Fixed length Ngrams: {'am': 196670, 'ge': 205386, 'gu': 199088, 'ti': 208184}           All Ngrams: 809,328
+
+A total of 148,724 Vocabularies are generated for all languages in models/5/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3339, 'ge': 3481, 'gu': 3264, 'ti': 3624}
+3        {'am': 8116, 'ge': 7482, 'gu': 7525, 'ti': 8005}
+4        {'am': 11956, 'ge': 10861, 'gu': 11021, 'ti': 11403}
+5        {'am': 15557, 'ge': 14112, 'gu': 14359, 'ti': 14619}
+
+Grams    Ngram Frequency Details
+2        {'am': 37724, 'ge': 39177, 'gu': 37343, 'ti': 38996}
+3        {'am': 45353, 'ge': 47290, 'gu': 45629, 'ti': 47696}
+4        {'am': 52982, 'ge': 55403, 'gu': 53915, 'ti': 56396}
+5        {'am': 60611, 'ge': 63516, 'gu': 62201, 'ti': 65096}
+
+==============================================================================================================
+Processing corpus 6
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:07:18.478899 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:07:18.479023 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:07:18.530196 - Matching 39,077 vocabulary items to 196,568 ngrams in Amharic language
+        2018-05-18 10:07:28.853007 - 100.00%
+        2018-05-18 10:07:28.857514 - Started building a summary of the model for Amharic language
+        2018-05-18 10:07:28.989457 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:07:29.872825 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:07:29.872987 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:07:29.923194 - Matching 35,718 vocabulary items to 205,236 ngrams in Geez language
+        2018-05-18 10:08:19.246666 - 100.00%
+        2018-05-18 10:08:19.251108 - Started building a summary of the model for Geez language
+        2018-05-18 10:08:19.456767 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:08:19.837171 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:08:19.837272 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:08:19.891645 - Matching 36,522 vocabulary items to 198,990 ngrams in Guragigna language
+        2018-05-18 10:08:27.814839 - 100.00%
+        2018-05-18 10:08:27.819232 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:08:28.071308 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:08:28.476167 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:08:28.476287 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:08:28.543976 - Matching 38,006 vocabulary items to 208,018 ngrams in Tigrigna language
+        2018-05-18 10:08:42.727971 - 100.00%
+        2018-05-18 10:08:42.732774 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:08:43.042687 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:08:43.042860 - Saving the model for all languages to models/6/fl.txt
+        2018-05-18 10:08:56.464128 - 100.00%
+
+Ngram Vocabularies : {'am': 39077, 'ge': 35718, 'gu': 36522, 'ti': 38006}               All Vocabulary: 149,323
+Fixed length Ngrams: {'am': 196568, 'ge': 205236, 'gu': 198990, 'ti': 208018}           All Ngrams: 808,812
+
+A total of 149,323 Vocabularies are generated for all languages in models/6/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3369, 'ge': 3433, 'gu': 3280, 'ti': 3638}
+3        {'am': 8127, 'ge': 7430, 'gu': 7587, 'ti': 8084}
+4        {'am': 11984, 'ge': 10808, 'gu': 11136, 'ti': 11518}
+5        {'am': 15597, 'ge': 14047, 'gu': 14519, 'ti': 14766}
+
+Grams    Ngram Frequency Details
+2        {'am': 37724, 'ge': 39177, 'gu': 37344, 'ti': 38995}
+3        {'am': 45336, 'ge': 47265, 'gu': 45613, 'ti': 47668}
+4        {'am': 52948, 'ge': 55353, 'gu': 53882, 'ti': 56341}
+5        {'am': 60560, 'ge': 63441, 'gu': 62151, 'ti': 65014}
+
+==============================================================================================================
+Processing corpus 7
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:08:57.261888 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:08:57.261993 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:08:57.316852 - Matching 39,538 vocabulary items to 196,490 ngrams in Amharic language
+        2018-05-18 10:09:05.233193 - 100.00%
+        2018-05-18 10:09:05.238068 - Started building a summary of the model for Amharic language
+        2018-05-18 10:09:05.370713 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:09:05.818998 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:09:05.819143 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:09:05.883617 - Matching 36,495 vocabulary items to 205,260 ngrams in Geez language
+        2018-05-18 10:09:18.743184 - 100.00%
+        2018-05-18 10:09:18.835529 - Started building a summary of the model for Geez language
+        2018-05-18 10:09:19.106583 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:09:20.114041 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:09:20.114155 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:09:20.165886 - Matching 36,615 vocabulary items to 199,034 ngrams in Guragigna language
+        2018-05-18 10:09:34.632616 - 100.00%
+        2018-05-18 10:09:34.636953 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:09:34.889367 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:09:35.328416 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:09:35.328893 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:09:35.396000 - Matching 38,056 vocabulary items to 207,854 ngrams in Tigrigna language
+        2018-05-18 10:09:44.159108 - 100.00%
+        2018-05-18 10:09:44.163996 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:09:44.482639 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:09:44.482852 - Saving the model for all languages to models/7/fl.txt
+        2018-05-18 10:09:56.244246 - 100.00%
+
+Ngram Vocabularies : {'am': 39538, 'ge': 36495, 'gu': 36615, 'ti': 38056}               All Vocabulary: 150,704
+Fixed length Ngrams: {'am': 196490, 'ge': 205260, 'gu': 199034, 'ti': 207854}           All Ngrams: 808,638
+
+A total of 150,704 Vocabularies are generated for all languages in models/7/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3388, 'ge': 3495, 'gu': 3290, 'ti': 3632}
+3        {'am': 8233, 'ge': 7607, 'gu': 7608, 'ti': 8092}
+4        {'am': 12133, 'ge': 11046, 'gu': 11162, 'ti': 11535}
+5        {'am': 15784, 'ge': 14347, 'gu': 14555, 'ti': 14797}
+
+Grams    Ngram Frequency Details
+2        {'am': 37724, 'ge': 39177, 'gu': 37343, 'ti': 38996}
+3        {'am': 45323, 'ge': 47269, 'gu': 45620, 'ti': 47641}
+4        {'am': 52922, 'ge': 55361, 'gu': 53897, 'ti': 56286}
+5        {'am': 60521, 'ge': 63453, 'gu': 62174, 'ti': 64931}
+
+==============================================================================================================
+Processing corpus 8
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:09:56.841597 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:09:56.841706 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:09:56.897946 - Matching 39,776 vocabulary items to 196,490 ngrams in Amharic language
+        2018-05-18 10:10:03.781131 - 100.00%
+        2018-05-18 10:10:03.785689 - Started building a summary of the model for Amharic language
+        2018-05-18 10:10:03.958768 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:10:04.528289 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:10:04.528553 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:10:04.588208 - Matching 36,491 vocabulary items to 205,212 ngrams in Geez language
+        2018-05-18 10:10:13.472848 - 100.00%
+        2018-05-18 10:10:13.479332 - Started building a summary of the model for Geez language
+        2018-05-18 10:10:13.723174 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:10:14.293019 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:10:14.293236 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:10:14.350690 - Matching 36,753 vocabulary items to 199,214 ngrams in Guragigna language
+        2018-05-18 10:10:24.541235 - 100.00%
+        2018-05-18 10:10:24.545759 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:10:24.849306 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:10:25.417163 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:10:25.417294 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:10:25.508220 - Matching 38,561 vocabulary items to 208,046 ngrams in Tigrigna language
+        2018-05-18 10:10:37.388482 - 100.00%
+        2018-05-18 10:10:37.393586 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:10:37.754095 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:10:37.754285 - Saving the model for all languages to models/8/fl.txt
+        2018-05-18 10:10:52.945139 - 100.00%
+
+Ngram Vocabularies : {'am': 39776, 'ge': 36491, 'gu': 36753, 'ti': 38561}               All Vocabulary: 151,581
+Fixed length Ngrams: {'am': 196490, 'ge': 205212, 'gu': 199214, 'ti': 208046}           All Ngrams: 808,962
+
+A total of 151,581 Vocabularies are generated for all languages in models/8/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3390, 'ge': 3502, 'gu': 3318, 'ti': 3685}
+3        {'am': 8269, 'ge': 7597, 'gu': 7647, 'ti': 8188}
+4        {'am': 12213, 'ge': 11040, 'gu': 11197, 'ti': 11690}
+5        {'am': 15904, 'ge': 14352, 'gu': 14591, 'ti': 14998}
+
+Grams    Ngram Frequency Details
+2        {'am': 37724, 'ge': 39177, 'gu': 37343, 'ti': 38996}
+3        {'am': 45323, 'ge': 47261, 'gu': 45650, 'ti': 47673}
+4        {'am': 52922, 'ge': 55345, 'gu': 53957, 'ti': 56350}
+5        {'am': 60521, 'ge': 63429, 'gu': 62264, 'ti': 65027}
+
+==============================================================================================================
+Processing corpus 9
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:10:53.701179 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:10:53.701425 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:10:53.764444 - Matching 39,735 vocabulary items to 196,366 ngrams in Amharic language
+        2018-05-18 10:11:03.712492 - 100.00%
+        2018-05-18 10:11:03.720804 - Started building a summary of the model for Amharic language
+        2018-05-18 10:11:03.930876 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:11:04.439814 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:11:04.439943 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:11:04.507576 - Matching 36,168 vocabulary items to 205,228 ngrams in Geez language
+        2018-05-18 10:11:16.597839 - 100.00%
+        2018-05-18 10:11:16.805793 - Started building a summary of the model for Geez language
+        2018-05-18 10:11:17.176026 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:11:18.048476 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:11:18.048606 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:11:18.122710 - Matching 36,521 vocabulary items to 199,056 ngrams in Guragigna language
+        2018-05-18 10:11:36.449511 - 100.00%
+        2018-05-18 10:11:36.453865 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:11:36.706668 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:11:37.196539 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:11:37.196678 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:11:37.261248 - Matching 38,138 vocabulary items to 207,938 ngrams in Tigrigna language
+        2018-05-18 10:11:45.254922 - 100.00%
+        2018-05-18 10:11:45.263323 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:11:45.608407 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:11:45.608763 - Saving the model for all languages to models/9/fl.txt
+        2018-05-18 10:11:58.223646 - 100.00%
+
+Ngram Vocabularies : {'am': 39735, 'ge': 36168, 'gu': 36521, 'ti': 38138}               All Vocabulary: 150,562
+Fixed length Ngrams: {'am': 196366, 'ge': 205228, 'gu': 199056, 'ti': 207938}           All Ngrams: 808,588
+
+A total of 150,562 Vocabularies are generated for all languages in models/9/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3396, 'ge': 3467, 'gu': 3291, 'ti': 3660}
+3        {'am': 8262, 'ge': 7526, 'gu': 7600, 'ti': 8118}
+4        {'am': 12193, 'ge': 10945, 'gu': 11130, 'ti': 11553}
+5        {'am': 15884, 'ge': 14230, 'gu': 14500, 'ti': 14807}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39178, 'gu': 37344, 'ti': 38996}
+3        {'am': 45302, 'ge': 47264, 'gu': 45624, 'ti': 47655}
+4        {'am': 52881, 'ge': 55350, 'gu': 53904, 'ti': 56314}
+5        {'am': 60460, 'ge': 63436, 'gu': 62184, 'ti': 64973}
+
+==============================================================================================================
+Processing corpus 10
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 10:11:59.015323 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 10:11:59.015521 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 10:11:59.072501 - Matching 39,483 vocabulary items to 196,618 ngrams in Amharic language
+        2018-05-18 10:12:10.187151 - 100.00%
+        2018-05-18 10:12:10.191580 - Started building a summary of the model for Amharic language
+        2018-05-18 10:12:10.409808 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:12:10.999127 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 10:12:10.999276 - Started building sorted frequency distribution for Geez language
+        2018-05-18 10:12:11.063091 - Matching 36,250 vocabulary items to 205,264 ngrams in Geez language
+        2018-05-18 10:12:20.958136 - 100.00%
+        2018-05-18 10:12:20.962494 - Started building a summary of the model for Geez language
+        2018-05-18 10:12:21.214874 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:12:21.822077 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 10:12:21.822184 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 10:12:21.893161 - Matching 36,625 vocabulary items to 199,088 ngrams in Guragigna language
+        2018-05-18 10:12:35.897215 - 100.00%
+        2018-05-18 10:12:35.901820 - Started building a summary of the model for Guragigna language
+        2018-05-18 10:12:36.132088 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 10:12:36.580725 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 10:12:36.580849 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 10:12:36.633731 - Matching 38,153 vocabulary items to 208,136 ngrams in Tigrigna language
+        2018-05-18 10:12:58.452210 - 100.00%
+        2018-05-18 10:12:58.456695 - Started building a summary of the model for Tigrigna language
+        2018-05-18 10:12:59.397491 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 10:12:59.397903 - Saving the model for all languages to models/10/fl.txt
+        2018-05-18 10:13:12.496958 - 100.00%
+
+Ngram Vocabularies : {'am': 39483, 'ge': 36250, 'gu': 36625, 'ti': 38153}               All Vocabulary: 150,511
+Fixed length Ngrams: {'am': 196618, 'ge': 205264, 'gu': 199088, 'ti': 208136}           All Ngrams: 809,106
+
+A total of 150,511 Vocabularies are generated for all languages in models/10/fl.txt file.
+
+Grams    Ngram Vocabulary Details
+2        {'am': 3386, 'ge': 3489, 'gu': 3303, 'ti': 3666}
+3        {'am': 8206, 'ge': 7551, 'gu': 7619, 'ti': 8111}
+4        {'am': 12113, 'ge': 10965, 'gu': 11162, 'ti': 11556}
+5        {'am': 15778, 'ge': 14245, 'gu': 14541, 'ti': 14820}
+
+Grams    Ngram Frequency Details
+2        {'am': 37723, 'ge': 39178, 'gu': 37343, 'ti': 38996}
+3        {'am': 45344, 'ge': 47270, 'gu': 45629, 'ti': 47688}
+4        {'am': 52965, 'ge': 55362, 'gu': 53915, 'ti': 56380}
+5        {'am': 60586, 'ge': 63454, 'gu': 62201, 'ti': 65072}
+
+Started: 2018-05-18 09:51:49.939787
+End    : 2018-05-18 10:13:13.531717
+Elapsed: 0:21:23.591930

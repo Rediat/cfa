@@ -1,1 +1,1 @@
-{'allngrams': 27244, 'allwords': 83223, 'vocabulary': {'am': 6974, 'ge': 7221, 'gu': 6888, 'ti': 6161}, 'mostfrequent': {'am': 436, 'ge': 428, 'gu': 338, 'ti': 587}, 'wordcount': {'am': 18980, 'ge': 20778, 'gu': 22339, 'ti': 21126}, 'uniques': 6161}
+{'allngrams': 14361, 'allwords': 36292, 'vocabulary': {'am': 3834, 'ge': 3485, 'gu': 3591, 'ti': 3451}, 'mostfrequent': {'am': 152, 'ge': 205, 'gu': 226, 'ti': 223}, 'wordcount': {'am': 8455, 'ge': 8988, 'gu': 9206, 'ti': 9643}, 'uniques': 3451, 'modeltype': 'wr', 'percent': 1}

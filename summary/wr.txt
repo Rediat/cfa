@@ -1,0 +1,999 @@
+2018-05-18 09:35:08.641275 - Saving the model for all languages to models/1/wr.txt
+        2018-05-18 09:35:09.335010 - 100.00%
+
+Ngram Vocabularies : {'am': 3484, 'ge': 3246, 'gu': 3263, 'ti': 3140}           All Vocabulary: 13,133
+Fixed length Ngrams: {'am': 7602, 'ge': 8101, 'gu': 8291, 'ti': 8670}           All Ngrams: 32,664
+
+A total of 13,133 Vocabularies are generated for all languages in models/1/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,484
+        Geez            3,246
+        Guragigna       3,263
+        Tigrigna        3,140
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,602
+        Geez            8,101
+        Guragigna       8,291
+        Tigrigna        8,670
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             200           5.74%
+        Amharic             4            82             919          26.38%
+        Amharic             5            84             744          21.35%
+        Amharic             3            80             692          19.86%
+        Amharic             6            86             528          15.15%
+        Amharic             8            90             114           3.27%
+        Amharic             1            76               7           0.20%
+        Amharic             7            88             238           6.83%
+        Amharic             9            92              33           0.95%
+        Amharic            10            94               8           0.23%
+        Amharic            11            96               1           0.03%
+        Geez                7            88             102           3.14%
+        Geez                3            80             709          21.84%
+        Geez                2            78             170           5.24%
+        Geez                4            82           1,104          34.01%
+        Geez                5            84             824          25.39%
+        Geez                6            86             303           9.33%
+        Geez                8            90              23           0.71%
+        Geez                1            76               5           0.15%
+        Geez                9            92               5           0.15%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             287           8.80%
+        Guragigna           3            80             900          27.58%
+        Guragigna           4            82             985          30.19%
+        Guragigna           5            84             691          21.18%
+        Guragigna           6            86             290           8.89%
+        Guragigna           7            88              93           2.85%
+        Guragigna           1            76               4           0.12%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90              10           0.31%
+        Tigrigna            2            78             178           5.67%
+        Tigrigna            4            82           1,037          33.03%
+        Tigrigna            3            80             718          22.87%
+        Tigrigna            5            84             665          21.18%
+        Tigrigna            7            88             127           4.04%
+        Tigrigna            6            86             345          10.99%
+        Tigrigna            1            76               4           0.13%
+        Tigrigna            8            90              48           1.53%
+        Tigrigna            9            92              13           0.41%
+        Tigrigna           10            94               4           0.13%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 2
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:09.352537 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:09.352734 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:09.355021 - Matching 3,548 vocabulary items to 7,627 ngrams in Amharic language
+        2018-05-18 09:35:09.592179 - 100.00%
+        2018-05-18 09:35:09.592496 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:09.600324 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:09.610925 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:09.611152 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:09.613147 - Matching 3,193 vocabulary items to 8,083 ngrams in Geez language
+        2018-05-18 09:35:09.873601 - 100.00%
+        2018-05-18 09:35:09.873916 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:09.883399 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:09.893769 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:09.893989 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:09.896162 - Matching 3,338 vocabulary items to 8,310 ngrams in Guragigna language
+        2018-05-18 09:35:10.163940 - 100.00%
+        2018-05-18 09:35:10.164330 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:10.177154 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:10.189781 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:10.197101 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:10.199368 - Matching 3,197 vocabulary items to 8,712 ngrams in Tigrigna language
+        2018-05-18 09:35:10.512912 - 100.00%
+        2018-05-18 09:35:10.513229 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:10.537467 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:10.537685 - Saving the model for all languages to models/2/wr.txt
+        2018-05-18 09:35:11.255357 - 100.00%
+
+Ngram Vocabularies : {'am': 3548, 'ge': 3193, 'gu': 3338, 'ti': 3197}           All Vocabulary: 13,276
+Fixed length Ngrams: {'am': 7627, 'ge': 8083, 'gu': 8310, 'ti': 8712}           All Ngrams: 32,732
+
+A total of 13,276 Vocabularies are generated for all languages in models/2/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,548
+        Geez            3,193
+        Guragigna       3,338
+        Tigrigna        3,197
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,627
+        Geez            8,083
+        Guragigna       8,310
+        Tigrigna        8,712
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             198           5.58%
+        Amharic             4            82             963          27.14%
+        Amharic             5            84             760          21.42%
+        Amharic             3            80             697          19.64%
+        Amharic             6            86             538          15.16%
+        Amharic             7            88             237           6.68%
+        Amharic             8            90             108           3.04%
+        Amharic             1            76               8           0.23%
+        Amharic             9            92              31           0.87%
+        Amharic            10            94               7           0.20%
+        Amharic            11            96               1           0.03%
+        Geez                7            88             101           3.16%
+        Geez                3            80             704          22.05%
+        Geez                2            78             159           4.98%
+        Geez                4            82           1,098          34.39%
+        Geez                5            84             801          25.09%
+        Geez                6            86             296           9.27%
+        Geez                8            90              23           0.72%
+        Geez                1            76               5           0.16%
+        Geez                9            92               5           0.16%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             292           8.75%
+        Guragigna           3            80             934          27.98%
+        Guragigna           4            82           1,022          30.62%
+        Guragigna           5            84             699          20.94%
+        Guragigna           6            86             284           8.51%
+        Guragigna           7            88              90           2.70%
+        Guragigna           1            76               5           0.15%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90               9           0.27%
+        Tigrigna            2            78             181           5.66%
+        Tigrigna            4            82           1,067          33.38%
+        Tigrigna            3            80             761          23.80%
+        Tigrigna            5            84             670          20.96%
+        Tigrigna            7            88             113           3.53%
+        Tigrigna            6            86             338          10.57%
+        Tigrigna            1            76               4           0.13%
+        Tigrigna            8            90              48           1.50%
+        Tigrigna            9            92              11           0.34%
+        Tigrigna           10            94               3           0.09%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 3
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:11.273666 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:11.273912 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:11.276538 - Matching 3,480 vocabulary items to 7,646 ngrams in Amharic language
+        2018-05-18 09:35:11.525986 - 100.00%
+        2018-05-18 09:35:11.526333 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:11.533937 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:11.544242 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:11.544467 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:11.546514 - Matching 3,276 vocabulary items to 8,060 ngrams in Geez language
+        2018-05-18 09:35:11.795120 - 100.00%
+        2018-05-18 09:35:11.795443 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:11.805499 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:11.816465 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:11.816674 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:11.818796 - Matching 3,270 vocabulary items to 8,256 ngrams in Guragigna language
+        2018-05-18 09:35:12.070536 - 100.00%
+        2018-05-18 09:35:12.070857 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:12.081462 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:12.092701 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:12.092979 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:12.095023 - Matching 3,165 vocabulary items to 8,708 ngrams in Tigrigna language
+        2018-05-18 09:35:12.362054 - 100.00%
+        2018-05-18 09:35:12.362367 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:12.374641 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:12.374842 - Saving the model for all languages to models/3/wr.txt
+        2018-05-18 09:35:13.044229 - 100.00%
+
+Ngram Vocabularies : {'am': 3480, 'ge': 3276, 'gu': 3270, 'ti': 3165}           All Vocabulary: 13,191
+Fixed length Ngrams: {'am': 7646, 'ge': 8060, 'gu': 8256, 'ti': 8708}           All Ngrams: 32,670
+
+A total of 13,191 Vocabularies are generated for all languages in models/3/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,480
+        Geez            3,276
+        Guragigna       3,270
+        Tigrigna        3,165
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,646
+        Geez            8,060
+        Guragigna       8,256
+        Tigrigna        8,708
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             194           5.57%
+        Amharic             4            82             942          27.07%
+        Amharic             5            84             775          22.27%
+        Amharic             3            80             690          19.83%
+        Amharic             6            86             515          14.80%
+        Amharic             8            90             106           3.05%
+        Amharic             7            88             220           6.32%
+        Amharic             9            92              25           0.72%
+        Amharic             1            76               8           0.23%
+        Amharic            10            94               5           0.14%
+        Geez                7            88              95           2.90%
+        Geez                3            80             717          21.89%
+        Geez                2            78             167           5.10%
+        Geez                4            82           1,112          33.94%
+        Geez                5            84             844          25.76%
+        Geez                6            86             306           9.34%
+        Geez                8            90              24           0.73%
+        Geez                1            76               6           0.18%
+        Geez                9            92               4           0.12%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             283           8.65%
+        Guragigna           3            80             894          27.34%
+        Guragigna           4            82             988          30.21%
+        Guragigna           5            84             704          21.53%
+        Guragigna           6            86             296           9.05%
+        Guragigna           7            88              88           2.69%
+        Guragigna           1            76               6           0.18%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90               8           0.24%
+        Tigrigna            2            78             181           5.72%
+        Tigrigna            4            82           1,078          34.06%
+        Tigrigna            3            80             747          23.60%
+        Tigrigna            5            84             664          20.98%
+        Tigrigna            7            88             105           3.32%
+        Tigrigna            6            86             332          10.49%
+        Tigrigna            1            76               3           0.09%
+        Tigrigna            8            90              42           1.33%
+        Tigrigna            9            92               9           0.28%
+        Tigrigna           10            94               3           0.09%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 4
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:13.061489 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:13.061676 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:13.063809 - Matching 3,540 vocabulary items to 7,586 ngrams in Amharic language
+        2018-05-18 09:35:13.384963 - 100.00%
+        2018-05-18 09:35:13.385276 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:13.393964 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:13.407268 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:13.407489 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:13.410099 - Matching 3,155 vocabulary items to 8,100 ngrams in Geez language
+        2018-05-18 09:35:13.699160 - 100.00%
+        2018-05-18 09:35:13.699512 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:13.715808 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:13.732373 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:13.732558 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:13.735175 - Matching 3,323 vocabulary items to 8,297 ngrams in Guragigna language
+        2018-05-18 09:35:14.005108 - 100.00%
+        2018-05-18 09:35:14.005417 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:14.016985 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:14.030964 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:14.031565 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:14.034107 - Matching 3,210 vocabulary items to 8,657 ngrams in Tigrigna language
+        2018-05-18 09:35:14.374130 - 100.00%
+        2018-05-18 09:35:14.374493 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:14.391643 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:14.391971 - Saving the model for all languages to models/4/wr.txt
+        2018-05-18 09:35:15.175759 - 100.00%
+
+Ngram Vocabularies : {'am': 3540, 'ge': 3155, 'gu': 3323, 'ti': 3210}           All Vocabulary: 13,228
+Fixed length Ngrams: {'am': 7586, 'ge': 8100, 'gu': 8297, 'ti': 8657}           All Ngrams: 32,640
+
+A total of 13,228 Vocabularies are generated for all languages in models/4/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,540
+        Geez            3,155
+        Guragigna       3,323
+        Tigrigna        3,210
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,586
+        Geez            8,100
+        Guragigna       8,297
+        Tigrigna        8,657
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             194           5.48%
+        Amharic             4            82             942          26.61%
+        Amharic             3            80             706          19.94%
+        Amharic             5            84             763          21.55%
+        Amharic             6            86             541          15.28%
+        Amharic             8            90             115           3.25%
+        Amharic             7            88             230           6.50%
+        Amharic             1            76               7           0.20%
+        Amharic             9            92              33           0.93%
+        Amharic            10            94               8           0.23%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              83           2.63%
+        Geez                3            80             679          21.52%
+        Geez                2            78             162           5.13%
+        Geez                4            82           1,097          34.77%
+        Geez                5            84             820          25.99%
+        Geez                6            86             285           9.03%
+        Geez                8            90              20           0.63%
+        Geez                1            76               5           0.16%
+        Geez                9            92               3           0.10%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             285           8.58%
+        Guragigna           3            80             926          27.87%
+        Guragigna           4            82           1,012          30.45%
+        Guragigna           5            84             695          20.91%
+        Guragigna           6            86             294           8.85%
+        Guragigna           7            88              93           2.80%
+        Guragigna           1            76               5           0.15%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90              10           0.30%
+        Tigrigna            2            78             175           5.45%
+        Tigrigna            4            82           1,070          33.33%
+        Tigrigna            3            80             739          23.02%
+        Tigrigna            5            84             680          21.18%
+        Tigrigna            7            88             121           3.77%
+        Tigrigna            6            86             355          11.06%
+        Tigrigna            1            76               4           0.12%
+        Tigrigna            8            90              48           1.50%
+        Tigrigna            9            92              13           0.40%
+        Tigrigna           10            94               4           0.12%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 5
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:15.194209 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:15.194433 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:15.197433 - Matching 3,511 vocabulary items to 7,629 ngrams in Amharic language
+        2018-05-18 09:35:15.446469 - 100.00%
+        2018-05-18 09:35:15.446850 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:15.453952 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:15.465866 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:15.466164 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:15.468139 - Matching 3,203 vocabulary items to 8,113 ngrams in Geez language
+        2018-05-18 09:35:15.730621 - 100.00%
+        2018-05-18 09:35:15.731016 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:15.741260 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:15.752220 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:15.752408 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:15.754820 - Matching 3,296 vocabulary items to 8,286 ngrams in Guragigna language
+        2018-05-18 09:35:16.042675 - 100.00%
+        2018-05-18 09:35:16.043042 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:16.063758 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:16.086050 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:16.088818 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:16.091208 - Matching 3,160 vocabulary items to 8,700 ngrams in Tigrigna language
+        2018-05-18 09:35:16.411539 - 100.00%
+        2018-05-18 09:35:16.411873 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:16.424333 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:16.424535 - Saving the model for all languages to models/5/wr.txt
+        2018-05-18 09:35:17.151328 - 100.00%
+
+Ngram Vocabularies : {'am': 3511, 'ge': 3203, 'gu': 3296, 'ti': 3160}           All Vocabulary: 13,170
+Fixed length Ngrams: {'am': 7629, 'ge': 8113, 'gu': 8286, 'ti': 8700}           All Ngrams: 32,728
+
+A total of 13,170 Vocabularies are generated for all languages in models/5/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,511
+        Geez            3,203
+        Guragigna       3,296
+        Tigrigna        3,160
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,629
+        Geez            8,113
+        Guragigna       8,286
+        Tigrigna        8,700
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             200           5.70%
+        Amharic             4            82             939          26.74%
+        Amharic             5            84             754          21.48%
+        Amharic             3            80             710          20.22%
+        Amharic             6            86             532          15.15%
+        Amharic             8            90             101           2.88%
+        Amharic             7            88             229           6.52%
+        Amharic             1            76               9           0.26%
+        Amharic             9            92              29           0.83%
+        Amharic            10            94               7           0.20%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              87           2.72%
+        Geez                3            80             717          22.39%
+        Geez                2            78             167           5.21%
+        Geez                4            82           1,107          34.56%
+        Geez                5            84             808          25.23%
+        Geez                6            86             288           8.99%
+        Geez                8            90              21           0.66%
+        Geez                1            76               5           0.16%
+        Geez                9            92               3           0.09%
+        Guragigna           2            78             283           8.59%
+        Guragigna           3            80             923          28.00%
+        Guragigna           4            82             997          30.25%
+        Guragigna           5            84             706          21.42%
+        Guragigna           6            86             282           8.56%
+        Guragigna           7            88              89           2.70%
+        Guragigna           1            76               5           0.15%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90               8           0.24%
+        Tigrigna            2            78             178           5.63%
+        Tigrigna            4            82           1,065          33.70%
+        Tigrigna            3            80             739          23.39%
+        Tigrigna            5            84             660          20.89%
+        Tigrigna            7            88             117           3.70%
+        Tigrigna            6            86             341          10.79%
+        Tigrigna            8            90              38           1.20%
+        Tigrigna            1            76               5           0.16%
+        Tigrigna            9            92              12           0.38%
+        Tigrigna           10            94               4           0.13%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 6
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:17.170566 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:17.170748 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:17.172858 - Matching 3,511 vocabulary items to 7,612 ngrams in Amharic language
+        2018-05-18 09:35:17.431240 - 100.00%
+        2018-05-18 09:35:17.431599 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:17.440645 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:17.454730 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:17.455318 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:17.457374 - Matching 3,184 vocabulary items to 8,088 ngrams in Geez language
+        2018-05-18 09:35:17.785784 - 100.00%
+        2018-05-18 09:35:17.786602 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:17.796076 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:17.807046 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:17.807273 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:17.809280 - Matching 3,335 vocabulary items to 8,269 ngrams in Guragigna language
+        2018-05-18 09:35:18.063220 - 100.00%
+        2018-05-18 09:35:18.063536 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:18.079921 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:18.091375 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:18.091606 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:18.093804 - Matching 3,187 vocabulary items to 8,673 ngrams in Tigrigna language
+        2018-05-18 09:35:18.392041 - 100.00%
+        2018-05-18 09:35:18.392347 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:18.417585 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:18.417774 - Saving the model for all languages to models/6/wr.txt
+        2018-05-18 09:35:19.339756 - 100.00%
+
+Ngram Vocabularies : {'am': 3511, 'ge': 3184, 'gu': 3335, 'ti': 3187}           All Vocabulary: 13,217
+Fixed length Ngrams: {'am': 7612, 'ge': 8088, 'gu': 8269, 'ti': 8673}           All Ngrams: 32,642
+
+A total of 13,217 Vocabularies are generated for all languages in models/6/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,511
+        Geez            3,184
+        Guragigna       3,335
+        Tigrigna        3,187
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,612
+        Geez            8,088
+        Guragigna       8,269
+        Tigrigna        8,673
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             191           5.44%
+        Amharic             4            82             948          27.00%
+        Amharic             5            84             770          21.93%
+        Amharic             3            80             683          19.45%
+        Amharic             6            86             531          15.12%
+        Amharic             8            90             106           3.02%
+        Amharic             7            88             236           6.72%
+        Amharic             9            92              31           0.88%
+        Amharic             1            76               8           0.23%
+        Amharic            10            94               6           0.17%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              99           3.11%
+        Geez                3            80             705          22.14%
+        Geez                2            78             167           5.24%
+        Geez                4            82           1,085          34.08%
+        Geez                5            84             798          25.06%
+        Geez                6            86             301           9.45%
+        Geez                8            90              22           0.69%
+        Geez                9            92               5           0.16%
+        Geez                1            76               1           0.03%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             291           8.73%
+        Guragigna           3            80             911          27.32%
+        Guragigna           4            82           1,013          30.37%
+        Guragigna           5            84             717          21.50%
+        Guragigna           6            86             293           8.79%
+        Guragigna           7            88              92           2.76%
+        Guragigna           1            76               5           0.15%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90              10           0.30%
+        Tigrigna            2            78             177           5.55%
+        Tigrigna            4            82           1,074          33.70%
+        Tigrigna            3            80             741          23.25%
+        Tigrigna            5            84             665          20.87%
+        Tigrigna            7            88             115           3.61%
+        Tigrigna            6            86             351          11.01%
+        Tigrigna            1            76               4           0.13%
+        Tigrigna            8            90              44           1.38%
+        Tigrigna            9            92              12           0.38%
+        Tigrigna           10            94               4           0.13%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 7
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:19.359555 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:19.359737 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:19.362207 - Matching 3,542 vocabulary items to 7,599 ngrams in Amharic language
+        2018-05-18 09:35:19.599537 - 100.00%
+        2018-05-18 09:35:19.599865 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:19.607001 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:19.617900 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:19.618098 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:19.620279 - Matching 3,249 vocabulary items to 8,092 ngrams in Geez language
+        2018-05-18 09:35:19.889333 - 100.00%
+        2018-05-18 09:35:19.889631 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:19.900100 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:19.911298 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:19.911492 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:19.913682 - Matching 3,342 vocabulary items to 8,277 ngrams in Guragigna language
+        2018-05-18 09:35:20.164570 - 100.00%
+        2018-05-18 09:35:20.165381 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:20.177825 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:20.189563 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:20.189748 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:20.191838 - Matching 3,198 vocabulary items to 8,645 ngrams in Tigrigna language
+        2018-05-18 09:35:20.453841 - 100.00%
+        2018-05-18 09:35:20.454157 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:20.477978 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:20.478255 - Saving the model for all languages to models/7/wr.txt
+        2018-05-18 09:35:21.261745 - 100.00%
+
+Ngram Vocabularies : {'am': 3542, 'ge': 3249, 'gu': 3342, 'ti': 3198}           All Vocabulary: 13,331
+Fixed length Ngrams: {'am': 7599, 'ge': 8092, 'gu': 8277, 'ti': 8645}           All Ngrams: 32,613
+
+A total of 13,331 Vocabularies are generated for all languages in models/7/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,542
+        Geez            3,249
+        Guragigna       3,342
+        Tigrigna        3,198
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,599
+        Geez            8,092
+        Guragigna       8,277
+        Tigrigna        8,645
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             200           5.65%
+        Amharic             4            82             942          26.60%
+        Amharic             5            84             773          21.82%
+        Amharic             3            80             688          19.42%
+        Amharic             6            86             537          15.16%
+        Amharic             8            90             107           3.02%
+        Amharic             7            88             244           6.89%
+        Amharic             1            76               9           0.25%
+        Amharic             9            92              33           0.93%
+        Amharic            10            94               8           0.23%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              99           3.05%
+        Geez                3            80             705          21.70%
+        Geez                2            78             163           5.02%
+        Geez                4            82           1,101          33.89%
+        Geez                5            84             839          25.82%
+        Geez                6            86             308           9.48%
+        Geez                8            90              23           0.71%
+        Geez                1            76               5           0.15%
+        Geez                9            92               5           0.15%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             297           8.89%
+        Guragigna           3            80             908          27.17%
+        Guragigna           4            82           1,013          30.31%
+        Guragigna           5            84             720          21.54%
+        Guragigna           6            86             295           8.83%
+        Guragigna           7            88              92           2.75%
+        Guragigna           1            76               5           0.15%
+        Guragigna           9            92               3           0.09%
+        Guragigna           8            90               9           0.27%
+        Tigrigna            2            78             183           5.72%
+        Tigrigna            4            82           1,050          32.83%
+        Tigrigna            3            80             739          23.11%
+        Tigrigna            5            84             683          21.36%
+        Tigrigna            7            88             121           3.78%
+        Tigrigna            6            86             355          11.10%
+        Tigrigna            1            76               3           0.09%
+        Tigrigna            8            90              47           1.47%
+        Tigrigna            9            92              12           0.38%
+        Tigrigna           10            94               4           0.13%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 8
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:21.280443 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:21.281090 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:21.283213 - Matching 3,586 vocabulary items to 7,599 ngrams in Amharic language
+        2018-05-18 09:35:21.545097 - 100.00%
+        2018-05-18 09:35:21.545420 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:21.552655 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:21.563630 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:21.563853 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:21.565800 - Matching 3,256 vocabulary items to 8,084 ngrams in Geez language
+        2018-05-18 09:35:21.859154 - 100.00%
+        2018-05-18 09:35:21.859492 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:21.868129 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:21.878794 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:21.879014 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:21.881141 - Matching 3,345 vocabulary items to 8,307 ngrams in Guragigna language
+        2018-05-18 09:35:22.127973 - 100.00%
+        2018-05-18 09:35:22.128278 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:22.141992 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:22.153689 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:22.154500 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:22.156729 - Matching 3,250 vocabulary items to 8,677 ngrams in Tigrigna language
+        2018-05-18 09:35:22.414666 - 100.00%
+        2018-05-18 09:35:22.414982 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:22.427849 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:22.428130 - Saving the model for all languages to models/8/wr.txt
+        2018-05-18 09:35:23.178745 - 100.00%
+
+Ngram Vocabularies : {'am': 3586, 'ge': 3256, 'gu': 3345, 'ti': 3250}           All Vocabulary: 13,437
+Fixed length Ngrams: {'am': 7599, 'ge': 8084, 'gu': 8307, 'ti': 8677}           All Ngrams: 32,667
+
+A total of 13,437 Vocabularies are generated for all languages in models/8/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,586
+        Geez            3,256
+        Guragigna       3,345
+        Tigrigna        3,250
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,599
+        Geez            8,084
+        Guragigna       8,307
+        Tigrigna        8,677
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             200           5.58%
+        Amharic             4            82             961          26.80%
+        Amharic             5            84             785          21.89%
+        Amharic             3            80             702          19.58%
+        Amharic             6            86             546          15.23%
+        Amharic             8            90             113           3.15%
+        Amharic             7            88             232           6.47%
+        Amharic             1            76               9           0.25%
+        Amharic             9            92              30           0.84%
+        Amharic            10            94               7           0.20%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              99           3.04%
+        Geez                3            80             708          21.74%
+        Geez                2            78             167           5.13%
+        Geez                4            82           1,104          33.91%
+        Geez                5            84             830          25.49%
+        Geez                6            86             314           9.64%
+        Geez                8            90              23           0.71%
+        Geez                1            76               5           0.15%
+        Geez                9            92               5           0.15%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             288           8.61%
+        Guragigna           3            80             927          27.71%
+        Guragigna           4            82           1,011          30.22%
+        Guragigna           5            84             718          21.46%
+        Guragigna           6            86             293           8.76%
+        Guragigna           7            88              94           2.81%
+        Guragigna           1            76               4           0.12%
+        Guragigna           9            92               2           0.06%
+        Guragigna           8            90               8           0.24%
+        Tigrigna            2            78             182           5.60%
+        Tigrigna            4            82           1,096          33.72%
+        Tigrigna            3            80             761          23.42%
+        Tigrigna            5            84             681          20.95%
+        Tigrigna            7            88             120           3.69%
+        Tigrigna            6            86             347          10.68%
+        Tigrigna            1            76               5           0.15%
+        Tigrigna            8            90              43           1.32%
+        Tigrigna            9            92              11           0.34%
+        Tigrigna           10            94               3           0.09%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 9
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:23.195610 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:23.195839 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:23.197964 - Matching 3,579 vocabulary items to 7,579 ngrams in Amharic language
+        2018-05-18 09:35:23.437323 - 100.00%
+        2018-05-18 09:35:23.437646 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:23.444420 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:23.455839 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:23.456272 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:23.458306 - Matching 3,233 vocabulary items to 8,086 ngrams in Geez language
+        2018-05-18 09:35:23.705947 - 100.00%
+        2018-05-18 09:35:23.706247 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:23.719229 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:23.731792 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:23.731973 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:23.734201 - Matching 3,323 vocabulary items to 8,280 ngrams in Guragigna language
+        2018-05-18 09:35:23.981024 - 100.00%
+        2018-05-18 09:35:23.981343 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:23.992639 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:24.004949 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:24.005111 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:24.007530 - Matching 3,191 vocabulary items to 8,659 ngrams in Tigrigna language
+        2018-05-18 09:35:24.269955 - 100.00%
+        2018-05-18 09:35:24.270279 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:24.283089 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:24.283298 - Saving the model for all languages to models/9/wr.txt
+        2018-05-18 09:35:25.032733 - 100.00%
+
+Ngram Vocabularies : {'am': 3579, 'ge': 3233, 'gu': 3323, 'ti': 3191}           All Vocabulary: 13,326
+Fixed length Ngrams: {'am': 7579, 'ge': 8086, 'gu': 8280, 'ti': 8659}           All Ngrams: 32,604
+
+A total of 13,326 Vocabularies are generated for all languages in models/9/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,579
+        Geez            3,233
+        Guragigna       3,323
+        Tigrigna        3,191
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,579
+        Geez            8,086
+        Guragigna       8,280
+        Tigrigna        8,659
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             200           5.59%
+        Amharic             4            82             959          26.80%
+        Amharic             5            84             770          21.51%
+        Amharic             3            80             688          19.22%
+        Amharic             6            86             556          15.54%
+        Amharic             8            90             111           3.10%
+        Amharic             7            88             246           6.87%
+        Amharic             1            76               7           0.20%
+        Amharic             9            92              33           0.92%
+        Amharic            10            94               8           0.22%
+        Amharic            11            96               1           0.03%
+        Geez                7            88              99           3.06%
+        Geez                3            80             704          21.78%
+        Geez                2            78             173           5.35%
+        Geez                4            82           1,098          33.96%
+        Geez                5            84             823          25.46%
+        Geez                6            86             304           9.40%
+        Geez                8            90              21           0.65%
+        Geez                1            76               5           0.15%
+        Geez                9            92               5           0.15%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             281           8.46%
+        Guragigna           3            80             914          27.51%
+        Guragigna           4            82           1,019          30.67%
+        Guragigna           5            84             710          21.37%
+        Guragigna           6            86             289           8.70%
+        Guragigna           7            88              94           2.83%
+        Guragigna           1            76               5           0.15%
+        Guragigna           8            90               9           0.27%
+        Guragigna           9            92               2           0.06%
+        Tigrigna            2            78             177           5.55%
+        Tigrigna            4            82           1,067          33.44%
+        Tigrigna            3            80             738          23.13%
+        Tigrigna            5            84             683          21.40%
+        Tigrigna            7            88             120           3.76%
+        Tigrigna            6            86             338          10.59%
+        Tigrigna            1            76               5           0.16%
+        Tigrigna            8            90              45           1.41%
+        Tigrigna            9            92              13           0.41%
+        Tigrigna           10            94               4           0.13%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+==============================================================================================================
+Processing corpus 10
+--------------------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:25.049208 - Completed removing punctuation marks and numbers for Amharic language
+        2018-05-18 09:35:25.049363 - Started building sorted frequency distribution for Amharic language
+        2018-05-18 09:35:25.051509 - Matching 3,554 vocabulary items to 7,621 ngrams in Amharic language
+        2018-05-18 09:35:25.297019 - 100.00%
+        2018-05-18 09:35:25.297339 - Started building a summary of the model for Amharic language
+        2018-05-18 09:35:25.305035 - Completed building sorted frequency distribution for Amharic language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:25.316635 - Completed removing punctuation marks and numbers for Geez language
+        2018-05-18 09:35:25.316814 - Started building sorted frequency distribution for Geez language
+        2018-05-18 09:35:25.319008 - Matching 3,233 vocabulary items to 8,092 ngrams in Geez language
+        2018-05-18 09:35:25.579811 - 100.00%
+        2018-05-18 09:35:25.580133 - Started building a summary of the model for Geez language
+        2018-05-18 09:35:25.589196 - Completed building sorted frequency distribution for Geez language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:25.600591 - Completed removing punctuation marks and numbers for Guragigna language
+        2018-05-18 09:35:25.600811 - Started building sorted frequency distribution for Guragigna language
+        2018-05-18 09:35:25.602953 - Matching 3,335 vocabulary items to 8,286 ngrams in Guragigna language
+        2018-05-18 09:35:25.889269 - 100.00%
+        2018-05-18 09:35:25.889588 - Started building a summary of the model for Guragigna language
+        2018-05-18 09:35:25.909040 - Completed building sorted frequency distribution for Guragigna language
+        ----------------------------------------------------------------------------------------------------
+        2018-05-18 09:35:25.920270 - Completed removing punctuation marks and numbers for Tigrigna language
+        2018-05-18 09:35:25.920483 - Started building sorted frequency distribution for Tigrigna language
+        2018-05-18 09:35:25.922720 - Matching 3,202 vocabulary items to 8,692 ngrams in Tigrigna language
+        2018-05-18 09:35:26.260316 - 100.00%
+        2018-05-18 09:35:26.260728 - Started building a summary of the model for Tigrigna language
+        2018-05-18 09:35:26.277047 - Completed building sorted frequency distribution for Tigrigna language
+        ----------------------------------------------------------------------------------------------------
+2018-05-18 09:35:26.277234 - Saving the model for all languages to models/10/wr.txt
+        2018-05-18 09:35:27.106096 - 100.00%
+
+Ngram Vocabularies : {'am': 3554, 'ge': 3233, 'gu': 3335, 'ti': 3202}           All Vocabulary: 13,324
+Fixed length Ngrams: {'am': 7621, 'ge': 8092, 'gu': 8286, 'ti': 8692}           All Ngrams: 32,691
+
+A total of 13,324 Vocabularies are generated for all languages in models/10/wr.txt file.
+
+        ========================================
+        Language        Word Vocabulary Details
+        ----------------------------------------
+        Amharic         3,554
+        Geez            3,233
+        Guragigna       3,335
+        Tigrigna        3,202
+        ----------------------------------------
+
+        ========================================
+        Language        Word Frequency Details
+        ----------------------------------------
+        Amharic         7,621
+        Geez            8,092
+        Guragigna       8,286
+        Tigrigna        8,692
+        ----------------------------------------
+
+        ======================================================================
+        Language   Characters    Byte            Frequency       Percent
+        ----------------------------------------------------------------------
+        Amharic             2            78             202           5.68%
+        Amharic             4            82             947          26.65%
+        Amharic             5            84             783          22.03%
+        Amharic             3            80             696          19.58%
+        Amharic             6            86             537          15.11%
+        Amharic             8            90             106           2.98%
+        Amharic             1            76               8           0.23%
+        Amharic             7            88             237           6.67%
+        Amharic             9            92              30           0.84%
+        Amharic            10            94               7           0.20%
+        Amharic            11            96               1           0.03%
+        Geez                7            88             100           3.09%
+        Geez                3            80             707          21.87%
+        Geez                2            78             168           5.20%
+        Geez                4            82           1,108          34.27%
+        Geez                5            84             817          25.27%
+        Geez                6            86             302           9.34%
+        Geez                8            90              18           0.56%
+        Geez                1            76               7           0.22%
+        Geez                9            92               5           0.15%
+        Geez               10            94               1           0.03%
+        Guragigna           2            78             285           8.55%
+        Guragigna           3            80             920          27.59%
+        Guragigna           4            82           1,012          30.34%
+        Guragigna           5            84             713          21.38%
+        Guragigna           6            86             295           8.85%
+        Guragigna           7            88              93           2.79%
+        Guragigna           1            76               6           0.18%
+        Guragigna           9            92               2           0.06%
+        Guragigna           8            90               9           0.27%
+        Tigrigna            2            78             180           5.62%
+        Tigrigna            4            82           1,077          33.64%
+        Tigrigna            3            80             749          23.39%
+        Tigrigna            5            84             675          21.08%
+        Tigrigna            7            88             120           3.75%
+        Tigrigna            6            86             338          10.56%
+        Tigrigna            8            90              43           1.34%
+        Tigrigna            1            76               4           0.12%
+        Tigrigna            9            92              12           0.37%
+        Tigrigna           10            94               3           0.09%
+        Tigrigna           11            96               1           0.03%
+        ----------------------------------------------------------------------
+
+Started: 2018-05-18 09:34:42.193040
+End    : 2018-05-18 09:35:27.114021
+Elapsed: 0:00:44.920981
